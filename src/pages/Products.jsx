@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Products = (props) => {
+  const {name, price} = props.product
   return (
     // <div>
     //     <p>Name: {props.products.name} </p>
@@ -18,8 +19,8 @@ const Products = (props) => {
     // </div>
 
     <div>
-        <p>Name: {props.product.name} </p>
-        <p>Price: {props.product.price} </p>
+        <p>Name: {name} </p>
+        <p>Price: {price} </p>
         <button onClick={props.alert} className='bg-green-600 text-white p-2'>Click me</button>
     </div>
   )
